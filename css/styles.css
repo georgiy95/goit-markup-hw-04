@@ -1,0 +1,415 @@
+/* ----------------------------------Службові селектори -----------------------------*/
+:root {
+  --primary-brand-color: #4d5ae5;
+
+  --pressed-state-color: #404bbf;
+
+  --dark-color: #2e2f42;
+
+  --sucsess-color: #31d0aa;
+
+  --text-color: #434455;
+
+  --subtle-text: #8e8f99;
+
+  --accent-color: #e7e9fc;
+
+  --light-color: #f4f4fd;
+
+  --modal-overlay-color: #2e2f42;
+
+  --hero-background-color: #2e2f42;
+
+  --white-color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  letter-spacing: 0.02em;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Хедер */
+
+.header {
+  list-style: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header-cntnr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hdr.list {
+  gap: 40px;
+}
+
+.header-studio .link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-studio .link:hover,
+.header-studio .link:focus {
+  color: var(--pressed-state-color);
+}
+
+.hdr.list {
+  display: flex;
+}
+
+.address .link {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--pressed-state-color);
+}
+
+.address.list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-logo.link {
+  padding-right: 76px;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+.logo-studio {
+  color: var(--modal-overlay-color);
+}
+
+/* Головне меню */
+
+/* ------------------------------------------------- 1 секція ------------------------------------------------- */
+
+.heading {
+  background: var(--modal-overlay-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.heading-caption {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.heading-btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  background: var(--primary-brand-color);
+  color: var(--white-color);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  border: none;
+  min-width: 169px;
+  height: 56px;
+}
+
+.heading-btn:hover,
+.heading-btn:focus {
+  background: var(--pressed-state-color);
+}
+
+/*--------------------------------------------------- 2 секція --------------------------------------------- */
+.calc {
+  width: calc(100% / 4 - 24px);
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.holder.list {
+  display: block;
+  display: flex;
+  gap: 24px;
+}
+
+.holder-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  margin-bottom: 8px;
+}
+
+.holder-paragraph {
+  line-height: 1.5;
+  width: 264px;
+}
+
+/*------------------------------------------------------ 3 секція -------------------------------------------*/
+.page {
+  padding-bottom: 120px;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--modal-overlay-color);
+  height: 40px;
+}
+
+.main-photo .list {
+  width: 264px;
+  height: 260px;
+  background: url(man-with-laptop-presenting-something.jpg);
+  mix-blend-mode: normal;
+  letter-spacing: 0.02em;
+  order: 0;
+  flex-grow: 0;
+}
+
+.main-photo.list {
+  margin-top: 72px;
+  display: flex;
+  gap: 24px;
+}
+
+/*------------------------------------------------------ 4 секція -------------------------------------------*/
+.sbttl-hp {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.section-background {
+  background: var(--light-color);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--modal-overlay-color);
+  margin-bottom: 72px;
+}
+
+.subtitle-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  margin-top: 8px;
+}
+
+.subtitle-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--modal-overlay-color);
+}
+
+.persone-photo {
+  justify-content: center;
+}
+
+.main-persone.list {
+  gap: 24px;
+  display: flex;
+  text-align: center;
+}
+
+.persone-border {
+  background: var(--white-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* -----------------------------------------------------------Футер --------------------------------------------------------------------------------*/
+.ftr {
+  width: 264px;
+}
+.footer {
+  background-color: var(--dark-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+.ftr-logo {
+  color: var(--light-color);
+}
+
+.footer-text {
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+/* -----------------------------------------------------------------Studio Portfolio -------------------------------------------------*/
+
+.features {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+/* .features {
+  flex-basis: calc((100% - 48px) / 3);
+} */
+
+.section.list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.aside-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 12px 24px;
+  background: var(--light-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  color: var(--primary-brand-color);
+}
+
+.aside-btn:hover,
+.aside-btn:focus {
+  background: var(--pressed-state-color);
+  color: var(--white-color);
+}
+
+.main.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.main-list.link {
+  text-decoration: none;
+}
+
+.main-list-banking {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--hero-background-color);
+  margin-bottom: 8px;
+}
+
+.main-list-app {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.portfolio-border {
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.prtfl-brdr {
+  border: 1px solid var(--accent-color);
+  border-top: none;
+}
