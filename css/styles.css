@@ -21,6 +21,8 @@
   --hero-background-color: #2e2f42;
 
   --white-color: #ffffff;
+
+  --customers-color: #afb1b8;
 }
 
 p,
@@ -149,9 +151,20 @@ ul {
 /* ------------------------------------------------- 1 секція ------------------------------------------------- */
 
 .heading {
+  max-width: 1440рх;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--modal-overlay-color);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .heading-caption {
@@ -204,6 +217,15 @@ ul {
   gap: 24px;
 }
 
+.hero-antenna {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .holder-heading {
   font-weight: 500;
   font-size: 20px;
@@ -216,6 +238,10 @@ ul {
 .holder-paragraph {
   line-height: 1.5;
   width: 264px;
+}
+
+.antenna-icon {
+  fill: var(--modal-overlay-color);
 }
 
 /*------------------------------------------------------ 3 секція -------------------------------------------*/
@@ -262,7 +288,7 @@ ul {
 }
 
 .subtitle {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -280,6 +306,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--text-color);
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .subtitle-name {
@@ -307,8 +334,126 @@ ul {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+/* -----------------------------------------------------------------------social icons------------------------------------------------------------ */
+.soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.soc-item {
+  width: 40px;
+  height: 40px;
+}
 
-/* -----------------------------------------------------------Футер --------------------------------------------------------------------------------*/
+.soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soc-icon {
+  fill: var(--light-color);
+}
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/* <!------------------------------------------------------------------------ 5 секція --------------------------------------------------------------> */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--modal-overlay-color);
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-item {
+  width: 104px;
+  height: 56px;
+
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--customers-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-icon {
+  fill: var(--customers-color);
+}
+
+.customers-icon:hover {
+  fill: var(--pressed-state-color);
+}
+.customers-link:hover {
+  border: 1px solid var(--pressed-state-color);
+}
+
+/* -------------------------------------------------------------------Футер --------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------Social media (Футер)----------------------------------------------------------------------- */
+.social-media-div {
+  text-align: center;
+}
+.social-media {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+.media-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.media-item {
+  width: 40px;
+  height: 40px;
+}
+.media-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 2555, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-icon {
+  fill: var(--light-color);
+}
+.media-link:hover,
+.media-link:focus {
+  background-color: var(--sucsess-color);
+}
+
 .ftr {
   width: 264px;
 }
@@ -316,6 +461,7 @@ ul {
   background-color: var(--dark-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
 }
 
 .footer-logo {
@@ -345,9 +491,11 @@ ul {
   padding-bottom: 120px;
 }
 
-/* .features {
-  flex-basis: calc((100% - 48px) / 3);
-} */
+.modal:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .section.list {
   display: flex;
@@ -373,6 +521,8 @@ ul {
 .aside-btn:focus {
   background: var(--pressed-state-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main.list {
