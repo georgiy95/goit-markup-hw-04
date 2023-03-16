@@ -224,6 +224,8 @@ ul {
   background: var(--light-color);
   border-radius: 4px;
   margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
 }
 
 .holder-heading {
@@ -242,6 +244,8 @@ ul {
 
 .antenna-icon {
   fill: var(--modal-overlay-color);
+  width: 64px;
+  height: 59.72px;
 }
 
 /*------------------------------------------------------ 3 секція -------------------------------------------*/
@@ -377,18 +381,15 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--modal-overlay-color);
-  margin-bottom: 72px;
 }
 
 .customers-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 72px;
 }
 .customers-item {
-  width: 104px;
-  height: 56px;
-
   width: 168px;
   height: 88px;
 }
@@ -402,35 +403,35 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.customers-icon {
   fill: var(--customers-color);
 }
 
-.customers-icon:hover {
+.customers-link:hover,
+.customers-link:focus {
   fill: var(--pressed-state-color);
-}
-.customers-link:hover {
   border: 1px solid var(--pressed-state-color);
 }
 
 /* -------------------------------------------------------------------Футер --------------------------------------------------------------------------------*/
 
 /* ------------------------------------------------------------Social media (Футер)----------------------------------------------------------------------- */
-.social-media-div {
-  text-align: center;
+
+.footer-icon {
+  display: flex;
+  gap: 120px;
+  align-items: baseline;
 }
+
 .social-media {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  margin-bottom: 16px;
 }
 .media-list {
   display: flex;
-  justify-content: center;
   gap: 16px;
 }
 .media-item {
