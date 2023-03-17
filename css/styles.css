@@ -203,7 +203,7 @@ ul {
 
 /*--------------------------------------------------- 2 секція --------------------------------------------- */
 .calc {
-  width: calc(100% / 4 - 24px);
+  width: calc((100% - 72px) / 4);
 }
 
 .hero {
@@ -224,7 +224,6 @@ ul {
   background: var(--light-color);
   border-radius: 4px;
   margin-bottom: 8px;
-  width: 264px;
   height: 112px;
 }
 
@@ -244,8 +243,6 @@ ul {
 
 .antenna-icon {
   fill: var(--modal-overlay-color);
-  width: 64px;
-  height: 59.72px;
 }
 
 /*------------------------------------------------------ 3 секція -------------------------------------------*/
@@ -390,7 +387,7 @@ ul {
   margin-top: 72px;
 }
 .customers-item {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 
@@ -418,7 +415,7 @@ ul {
 
 .footer-icon {
   display: flex;
-  gap: 120px;
+
   align-items: baseline;
 }
 
@@ -457,6 +454,7 @@ ul {
 
 .ftr {
   width: 264px;
+  margin-right: 120px;
 }
 .footer {
   background-color: var(--dark-color);
@@ -492,8 +490,7 @@ ul {
   padding-bottom: 120px;
 }
 
-.modal:hover {
-  cursor: pointer;
+.main-list.link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -524,6 +521,7 @@ ul {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--pressed-state-color);
 }
 
 .main.list {
@@ -533,6 +531,7 @@ ul {
 }
 
 .main-list.link {
+  display: block;
   text-decoration: none;
 }
 
